@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h2>Caculator</h2>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+                <input type="number"id="nhapsoa">
+                <input type="number"id="nhapsob">
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <input type="button"value="Addition(+)"onclick="display1()">
+                <input type="button"value="Subtraction(-)" onclick="display2()">
+                <input type="button"value="Multiplication(x)"onclick="display3()">
+                <input type="button"value="Division(/)"onclick="display4()">
+            </th>
+        </tr>
+        <tr>
+            <p id="ResultDivision">ResultDivision: </p>
+        </tr>
+
+    </table>
+    <script>
+        function display1() {
+            let a= parseInt(document.getElementById("nhapsoa").value) ;
+            let b= parseInt(document.getElementById("nhapsob").value);
+            let ad= a+b;
+            document.getElementById("ResultDivision").innerHTML="ResultDivision:" +ad;
+
+        }
+        function display2() {
+            let a= parseInt(document.getElementById("nhapsoa").value) ;
+            let b= parseInt(document.getElementById("nhapsob").value);
+            let ad= a-b;
+            document.getElementById("ResultDivision").innerHTML="ResultDivision:" +ad;
+
+        }
+        function display3() {
+            let a= parseInt(document.getElementById("nhapsoa").value) ;
+            let b= parseInt(document.getElementById("nhapsob").value);
+            let ad= a*b;
+            document.getElementById("ResultDivision").innerHTML="ResultDivision:" +ad;
+
+        }
+        function display4() {
+            let a= parseInt(document.getElementById("nhapsoa").value) ;
+            let b= parseInt(document.getElementById("nhapsob").value);
+            let ad= a/b;
+            document.getElementById("ResultDivision").innerHTML="ResultDivision:" +ad;
+
+        }
+
+    </script>
+
+</form>
+</body>
+</html>
